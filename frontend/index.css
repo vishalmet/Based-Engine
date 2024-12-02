@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: 'Brandy';
+  src: url('/fonts/Brandy.ttf') format('truetype');
+}
+
+.brandy-font {
+  font-family: 'Brandy';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-border-radius {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+.bricolage-font {
+  font-family: "Bricolage Grotesque";
+}
+
+
+.card {
+  position: relative;
+  /* width: 450px;
+  height: 250px; */
+  border-radius: 14px;
+  /* z-index: 1111; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 20px 20px 60px #000000, -20px -20px 60px #000000; */
+  ;
+}
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  /* width: 440px;
+  height: 240px; */
+  z-index: 2;
+  /* background: #0e0e0e; */
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid rgb(71, 71, 71);
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  /* width: 450px;
+  height: 250px; */
+  border-radius: 50%;
+  /* background-color: #3b82f6; */
+  background: linear-gradient(to right, #a855f7, #3b82f6, #22c55e);
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-border {
+  --border-gradient: linear-gradient(to right, #a855f7, #3b82f6, #22c55e);
+  border-image: var(--border-gradient);
+  border-image-slice: 1;
+  /* border-radius: 10rem; */
+}
+
+/* Example CSS for border radius and gradient border */
+.video-container {
+  border: 2px solid transparent;
+  /* border-radius: 1rem; */
+   /* Adjust as needed */
+  /* background-image: var(--border-gradient); */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.content {
+  padding: 1rem;
+}
