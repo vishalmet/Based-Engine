@@ -1,9 +1,9 @@
 import Marquee from "react-fast-marquee";
 
 const videoData = [
-  { videoSrc: 'https://youtube.com/watch?v=fvq7cy3HtYI', content: 'Vortex Survival is an intense online game built with the Vortex Engine. Players start with 100 health and must collect all 10 collectibles while managing their health, which drains as they move. Can you survive and gather them all before your health runs out?"' },
-  { videoSrc: 'https://youtube.com/watch?v=GpgEEeAacn0', content: 'Onchain Breakout is an innovative and immersive blockchain-based game developed using the VortexEngine, a powerful game engine designed for creating dynamic, real-time experiences. This game blends the classic mechanics of the beloved Breakout game with the unique capabilities of blockchain technology, offering players a seamless fusion of nostalgia and cutting-edge innovation.' },
-  // { videoSrc: 'https://www.youtube.com/watch?v=dyUmgWxPKwc', content: 'Unlock the future of gaming with our cutt qing-edge game engine. Designed for developers, by developers, VortexEngine offers seamless integration, powerful tools, and endless possibilities. Join the revolution and bring your game ideas to life on the blockchain.' },
+  { videoSrc: 'https://youtube.com/watch?v=fvq7cy3HtYI', content: 'Apt Survival is an intense online game built with the Apt Engine. Players start with 100 health and must collect all 10 collectibles while managing their health, which drains as they move. Can you survive and gather them all before your health runs out?"' },
+  { videoSrc: 'https://youtube.com/watch?v=GpgEEeAacn0', content: 'Onchain Breakout is an innovative and immersive blockchain-based game developed using the AptEngine, a powerful game engine designed for creating dynamic, real-time experiences. This game blends the classic mechanics of the beloved Breakout game with the unique capabilities of blockchain technology, offering players a seamless fusion of nostalgia and cutting-edge innovation.' },
+  // { videoSrc: 'https://www.youtube.com/watch?v=dyUmgWxPKwc', content: 'Unlock the future of gaming with our cutt qing-edge game engine. Designed for developers, by developers, AptEngine offers seamless integration, powerful tools, and endless possibilities. Join the revolution and bring your game ideas to life on the blockchain.' },
   // Add more video data with URLs here
 ];
 

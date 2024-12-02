@@ -36,10 +36,10 @@ const HowitWorks = () => {
                 <div>
                   <p className=" brandy-font text-4xl md:text-7xl text-center">2</p>
                   <p className=" text-xl md:text-2xl brandy-font font-semibold text-center">
-                    Build a Game using VortextEngine
+                    Build a Game using aptEngine
                   </p>
                   <p className="text-center">
-                    Utilize VortexEngine to develop your on-chain game with powerful, seamless tools.
+                    Utilize aptEngine to develop your on-chain game with powerful, seamless tools.
                   </p>
                 </div>
               </div>
