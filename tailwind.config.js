@@ -14,6 +14,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
+      },
       keyframes: {
         gradient1: {
           '0%, 100%': { transform: 'translate(0, 0)' },

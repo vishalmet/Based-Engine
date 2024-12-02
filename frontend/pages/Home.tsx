@@ -1,27 +1,27 @@
 // import Navbar from "@/components/Navbar";
-import GradientBackground from "@/components/Background";
 import HowitWorks from "@/components/HowitWorks";
-import Illustration from "../../public/illustrations.json";
-import Lottie from "lottie-react";
+// import Illustration from "../../public/illustrations.json";
+// import Lottie from "lottie-react";
 import Tutorials from "@/components/Tutorials";
 
 const Home: React.FC = () => {
   return (
     <div className=" min-h-screen overflow-hidden bricolage-font ">
-      <GradientBackground>
+      {/* <GradientBackground> */}
+      <div className=" bg-gradient-radial from-[#f8f8f8] via-[#2a2a2a] to-[#2a2a2a]">
         {/* <Navbar /> */}
         <div className=" flex justify-center items-center min-h-screen" id="home">
-          <div className="pt-20 md:grid md:grid-cols-2 mx-6 md:mx-16 lg:mx-32 items-center">
+          <div className="pt-20  mx-6 md:mx-16 lg:mx-32 items-center">
             <div className=" ">
-              <div className=" w-[350px] lg:w-full lg:max-w-[550px] h-auto mx-auto">
+              {/* <div className=" w-[350px] lg:w-full lg:max-w-[550px] h-auto mx-auto">
                 <Lottie animationData={Illustration} loop={true} />
-              </div>
+              </div> */}
             </div>
-            <div className=" items-center">
-              <p className=" text-3xl md:text-5xl lg:text-7xl bg-transparent backdrop-blur-lg backdrop-filter shadow-2xl p-4 rounded brandy-font font-bold border-s-4 mx-10 md:mx-0 text-center">
-                Welcome to VortexEngine
+            <div className=" items-center text-[#2a2a2a]">
+              <p className=" text-3xl md:text-5xl lg:text-7xl brandy-font font-bold text-center bg-[#f8f8f8]/80 rounded-t w-fit mx-auto p-2">
+                aptEngine.
               </p>
-              <p className="pt-4 text-center text-base mx-4 md:mx-0 md:text-xl">
+              <p className="max-w-[40%] mx-auto p-2 text-center text-base md:text-xl bg-[#2a2a2a]/80 rounded text-[#f8f8f8]">
                 Unlock the future of gaming with our cutting-edge game engine. Designed for developers, by developers,
                 VortexEngine offers seamless integration, powerful tools, and endless possibilities. Join the revolution
                 and bring your game ideas to life on the blockchain.
@@ -34,7 +34,8 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </GradientBackground>
+        </div>
+      {/* </GradientBackground> */}
       <div className="" id="howitworks">
         <HowitWorks />
       </div>

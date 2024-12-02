@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
           href="/"
           className="text-white text-xs lg:text-xl brandy-font bg-transparent backdrop-blur-2xl backdrop-filter hover:scale-95 transform transition-transform duration-100 hover:shadow-xl hover:bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 p-3 px-6 rounded md:text-base border-2 border-white"
         >
-          VortexEngine
+          aptEngine.
         </a>
 
         <div className="lg:hidden">
@@ -124,7 +124,7 @@ const Navbar: React.FC = () => {
                 </a>
               </li>
 
-              <li>
+              {/* <li>
                 <div className="relative">
                   <button
                     onClick={toggleDropdown}
@@ -149,7 +149,7 @@ const Navbar: React.FC = () => {
                     </ul>
                   )}
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -202,7 +202,7 @@ const Navbar: React.FC = () => {
           >
             Resources
           </a>
-          <div className="relative">
+          {/* <div className="relative">
             <button
               onClick={toggleDropdown}
               className="py-1 px-1 mx-1 md:py-3 md:px-5 md:mx-3 flex-wrap cursor-pointer border-b-2 rounded-xl flex justify-center items-center"
@@ -242,7 +242,7 @@ const Navbar: React.FC = () => {
                 </li>
               </ul>
             )}
-          </div>
+          </div> */}
           <ConnectButton chain={selectedChain} />
         </div>
       </div>
